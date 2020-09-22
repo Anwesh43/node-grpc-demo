@@ -1,0 +1,12 @@
+message MyRequest {
+    required string name = 1;
+}
+
+message MyResponse {
+    required string message = 2;
+}
+
+service SimpleService {
+    rpc sayHello(MyRequest) returns (MyResponse) {}
+}
+
